@@ -3,14 +3,13 @@
 
 int Imovel::nextId = 1;
 
-//Construtor
 
 Imovel::Imovel(TipoImovel tipo, int propId, double lat, double lng, const std::string& endereco, double preco)
     : id(nextId++), tipo(tipo), proprietarioId(propId), lat(lat), lng(lng), endereco(endereco), preco(preco) {
    
 }
 
-// --- Implementação dos Getters ---
+// getters
 
 int Imovel::getId() const {
     return this->id;

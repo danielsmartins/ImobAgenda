@@ -4,7 +4,7 @@
 
 class Cliente {
 private:
-    static int nextId; // static variable makes nextId shared across all instances
+    static int nextId; // variavel estática compartilhada por todas as instâncias de Cliente
     int id;
     std::string telefone;
     std::string nome;

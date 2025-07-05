@@ -22,10 +22,10 @@ private:
     double preco;
 
 public:
-    // Construtor
+
     Imovel(TipoImovel tipo, int propId, double lat, double lng, const std::string& endereco, double preco);
 
-    // --- Getters ---
+    //Getters
     int getId() const;
     TipoImovel getTipo() const;
     int getProprietarioId() const;

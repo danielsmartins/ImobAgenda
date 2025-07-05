@@ -1,14 +1,12 @@
 #include "corretor.h"
-#include "imovel.h" // Incluímos aqui para que a classe Corretor saiba o que é um Imovel
+#include "imovel.h" 
 
-// Inicializa o contador de ID estático. Ele é compartilhado por todos os objetos Corretor.
+
 int Corretor::nextId = 1;
 
-// Implementação do Construtor
-// Usa a lista de inicialização de membros para atribuir os valores diretamente.
 Corretor::Corretor(const std::string& telefone, bool avaliador, double lat, double lng, const std::string& nome)
     : id(nextId++), nome(nome), telefone(telefone), avaliador(avaliador), lat(lat), lng(lng) {
-    // O corpo do construtor pode ficar vazio, pois todo o trabalho foi feito na lista de inicialização.
+    
 }
 
 // --- Implementação dos Getters ---

@@ -1,7 +1,8 @@
 CXX = g++
 CXXFLAGS = -std=c++11 -Wall -Wextra -pedantic
 
-SRCS = main.cpp corretor.cpp imovel.cpp cliente.cpp
+
+SRCS = main.cpp corretor.cpp imovel.cpp cliente.cpp agenda.cpp
 
 imobiliaria: $(SRCS)
 	$(CXX) $(CXXFLAGS) -o imobiliaria $(SRCS)
